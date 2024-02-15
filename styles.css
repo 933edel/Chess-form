@@ -1,0 +1,131 @@
+/* the point of applying this universal styling is that it nullifies the browser default styling that is applied */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./assets/436882.jpg");
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 90vw;
+}
+
+h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: rgb(20, 33, 61);
+}
+
+.form_box {
+    margin: 17px auto;
+    width: 60vw;
+    padding: 40px;
+    background-color: rgb(229, 229, 229);
+    box-shadow: 3px 3px 4px rgb(252, 163, 17);
+    border-radius: 7px;
+}
+
+.form_container {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(200px, 6fr));
+    gap: 30px;
+}
+
+.form_control {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+}
+
+input,
+select,
+textarea {
+    padding: 7px 12px;
+    border: 1px solid rgb(252, 163, 17);
+    border-radius: 3px;
+    font-size: 0.9rem;
+}
+
+input:focus {
+    outline-color: black;
+}
+
+textarea:focus {
+    outline-color: black;
+}
+
+select:focus {
+    outline-color: black;
+}
+
+.btn-container {
+
+    display: flex;
+    justify-content: end;
+    margin-top: 40px;
+    margin-bottom: 0;
+}
+
+button {
+    background-color: rgb(20, 33, 61);
+    height: 40px;
+    width: 90px;
+    border-color: transparent;
+    border-radius: 8px;
+    font-size: 1.3rem;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: rgb(252, 163, 17);
+    border: 2px solid white;
+    transition: 0.2s ease-out;
+}
+
+.textarea_control {
+    grid-column: 1 / span 2;
+}
+
+.textarea_control textarea {
+    width: 100%;
+}
+
+@media (max-width: 850px) {
+    .form_container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 3fr));
+        gap: 20px;
+    }
+
+    .textarea_control {
+        grid-column: 1 / span 1;
+    }
+}
+
+@media (max-width: 462px) {
+    .form_container {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 20px;
+    }
+
+    .textarea_control {
+        grid-column: 1 / span 1;
+    }
+}

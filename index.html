@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chess Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form_box">
+            <h1>The World of Chess Awaits You</h1>
+
+            <form action="">
+                <div class="form_container">
+                    <div class="form_control">
+                        <label for="first_name">First Name:</label>
+                        <input type="text" id="first_name" name="first_name" placeholder="Enter your first name" />
+                    </div>
+                    <div class="form_control">
+                        <label for="last_name">Last Name:</label>
+                        <input type="text" id="last_name" name="last_name" placeholder="Enter your last name" />
+                    </div>
+                    <div class="form_control">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email address" />
+                    </div>
+                    <div class="form_control">
+                        <label for="elo">Elo Rating Bracket:</label>
+
+                        <select name="" id="elo">
+                            <option value="">Please select your Elo rating bracket</option>
+                            <option value="800-1300">800-1300 (Beginner)</option>
+                            <option value="1300-1800">1300-1800 (Intermediate)</option>
+                            <option value="1800-2000"> 1800-2000 (Advanced Intermediate)</option>
+                            <option value="2000 & Above"> 2000 & Above (Master)</option>
+                        </select>
+                    </div>
+                    <div class="textarea_control">
+                        <label for="story">What is your Chess Story?</label>
+                        <textarea name="story" id="story" cols="50" rows="4"
+                            placeholder="Describe your chess journey"></textarea>
+                    </div>
+                    <div class="form_control">
+                        <label for="chessdotcom">Chess.com profile:</label>
+                        <input type="url" id="chessdotcom" name="chessdotcom" placeholder="chess.com account" />
+                    </div>
+                    <div class="form_control">
+                        <label for="lichess">Lichess.org profile:</label>
+                        <input type="url" id="lichess" name="lichess" placeholder="lichess.org account" />
+                    </div>
+                    <div class="form_control">
+                        <label for="date">Enter your Birth Date:</label>
+                        <input type="date" id="date" name="date" />
+                    </div>
+                    <div class="form_control">
+                        <label for="chesspic">Upload your chess photo:</label>
+                        <input type="file" id="chesspic" name="chesspic" placeholder="chess picture" />
+                    </div>
+                </div>
+
+                <div class="btn-container"><button type="submit">Submit</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
